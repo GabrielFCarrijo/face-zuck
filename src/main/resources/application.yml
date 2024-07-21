@@ -1,2 +1,11 @@
-greeting:
-  message: "hello"
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: postgres
+    jdbc:
+      url: jdbc:postgresql://localhost:5433/face-zuck
+  hibernate-orm:
+    database:
+      generation: update
+    dialect: org.hibernate.dialect.PostgreSQLDialect
