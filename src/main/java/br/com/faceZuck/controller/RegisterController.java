@@ -1,4 +1,4 @@
-package br.com.faceZuck.constructor;
+package br.com.faceZuck.controller;
 
 import br.com.faceZuck.dto.form.RegisterForm;
 import br.com.faceZuck.service.register.RegisterService;
@@ -8,7 +8,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 @Path("/register")
-public class RegisterConstructor {
+public class RegisterController {
 
     @Inject
     RegisterService service;
