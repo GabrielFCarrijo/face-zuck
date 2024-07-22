@@ -1,5 +1,7 @@
 package br.com.faceZuck.model;
 
+import br.com.faceZuck.model.enums.EducationLevel;
+import br.com.faceZuck.model.enums.MaritalStatus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,9 +21,11 @@ public class Profile {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String nome;
+	private String name;
+	private EducationLevel educationLevel;
+	private MaritalStatus maritalStatus;
 	private Address address;
-	private String sobreMim;
+	private String aboutMe;
 	@OneToOne
 	@JoinColumn(name = "idCadastro")
 	private Register register;
