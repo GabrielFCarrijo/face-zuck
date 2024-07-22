@@ -1,4 +1,4 @@
-package br.com.faceZuck;
+package br.com.faceZuck.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,18 +8,20 @@ import lombok.*;
 
 import java.time.LocalDate;
 
+@Data
 @Entity
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cadastro {
+public class Register {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
-    private String usuario;
-    private LocalDate dataNascimento;
+    private String name;
+    private String username;
+    private LocalDate birthDate;
     private String email;
+    private String password;
 }
