@@ -1,4 +1,4 @@
-package br.com.faceZuck.repository.mapper;
+package br.com.faceZuck.service.mapper;
 
 import br.com.faceZuck.dto.RegisterDto;
 import br.com.faceZuck.model.Register;

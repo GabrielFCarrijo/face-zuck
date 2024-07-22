@@ -1,4 +1,4 @@
-package br.com.faceZuck.profile.model;
+package br.com.faceZuck.model;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

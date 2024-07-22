@@ -1,4 +1,4 @@
-package br.com.faceZuck.profile.model.enums;
+package br.com.faceZuck.model.enums;
 
 public enum MaritalStatusEnum {
 	SINGLE,

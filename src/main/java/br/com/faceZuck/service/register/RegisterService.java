@@ -5,15 +5,13 @@ import br.com.faceZuck.dto.RegisterDto;
 import br.com.faceZuck.dto.form.RegisterForm;
 import br.com.faceZuck.model.Register;
 import br.com.faceZuck.repository.RegisterRepository;
-import br.com.faceZuck.repository.mapper.RegisterMapper;
+import br.com.faceZuck.service.mapper.RegisterMapper;
 import br.com.faceZuck.service.register.registerValidation.ValidateRegisterUser;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @ApplicationScoped
 public class RegisterService {

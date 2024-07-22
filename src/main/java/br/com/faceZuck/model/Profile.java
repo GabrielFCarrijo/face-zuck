@@ -1,8 +1,8 @@
-package br.com.faceZuck.profile.model;
+package br.com.faceZuck.model;
 
 import br.com.faceZuck.Cadastro;
-import br.com.faceZuck.profile.model.enums.EducationLevelEnum;
-import br.com.faceZuck.profile.model.enums.MaritalStatusEnum;
+import br.com.faceZuck.model.enums.EducationLevelEnum;
+import br.com.faceZuck.model.enums.MaritalStatusEnum;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
