@@ -3,6 +3,7 @@ package br.com.faceZuck.service.register.registerValidation;
 import br.com.faceZuck.config.exception.ValidationException;
 import br.com.faceZuck.dto.form.RegisterForm;
 import jakarta.enterprise.context.ApplicationScoped;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,19 +14,19 @@ public class ValidateRegisterUser {
     public void validateRegisterUser(RegisterForm registerForm) {
         List<String> errors = new ArrayList<>();
 
-        if (registerForm.getName() == null || registerForm.getName().isEmpty()) {
+        if (StringUtils.isBlank(registerForm.getName())) {
             errors.add("Name must be informed");
         }
-        if (registerForm.getUsername() == null || registerForm.getUsername().isEmpty()) {
+        if (StringUtils.isBlank(registerForm.getUsername())) {
             errors.add("Username must be informed");
         }
-        if (registerForm.getBirthDate() == null || registerForm.getBirthDate().isEmpty()) {
+        if (StringUtils.isBlank(registerForm.getBirthDate())) {
             errors.add("Birth date must be informed");
         }
-        if (registerForm.getEmail() == null || registerForm.getEmail().isEmpty()) {
+        if (StringUtils.isBlank(registerForm.getEmail())) {
             errors.add("Email must be informed");
         }
-        if (registerForm.getPassword() == null || registerForm.getPassword().isEmpty()) {
+        if (StringUtils.isBlank(registerForm.getPassword())) {
             errors.add("Password must be informed");
         }
 
